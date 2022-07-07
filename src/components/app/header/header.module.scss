@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+.base {
+  background-image: linear-gradient(90deg, #ce9ffc 10%, #7367f0 100%);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  padding: 0 2em;
+  height: 5em;
+
+  font-family: "Roboto", sans-serif;
+
+  > div {
+    border: 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 1.5em;
+  }
+}
+
+a {
+  text-decoration: none;
+}

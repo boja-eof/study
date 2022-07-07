@@ -2,7 +2,9 @@ import React from "react";
 import AppHeader from "../components/app/header";
 import { BrowserRouter } from "react-router-dom";
 
-import "./../components/app/app.css";
+import "../components/app/css/fonts.css";
+import "../components/app/css/reset.css";
+import "../components/app/css/common.css";
 
 export default {
   title: "AppHeader",

@@ -1,9 +1,13 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppHeader from "./header";
-import { header as headerConfig } from "../../settings";
+import { Header as headerConfig } from "../../settings";
 import Routes from "../../routes";
-import "./app.css";
+
+import "./css/fonts.css";
+import "./css/reset.css";
+import "./css/common.css";
+import "./css/app.css";
 
 const style = {
   marginTop: "5em",

@@ -1,10 +1,16 @@
 import React from "react";
+import ContentHeader from "./../content-header";
+import { WhatsNew } from "../../settings";
+import style from "./base.module.scss";
 
 const WhatNews = () => {
   return (
-    <div>
-      <h1>WhatNews</h1>
-    </div>
+    <>
+      <ContentHeader {...WhatsNew} />
+      <div>
+        <h1>WhatNews</h1>
+      </div>
+    </>
   );
 };
 

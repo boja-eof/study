@@ -3,13 +3,13 @@ import AppHeaderInfo from "./info/info";
 import AppHeaderAction from "./action/action";
 import { PropTypes } from "prop-types";
 
-import "./header.css";
+import style from "./header.module.scss";
 
 const AppHeader = (props) => {
   const { title, items, actions } = props.config;
   return (
-    <header className="header">
-      <div className="items">
+    <header className={style.base}>
+      <div>
         <AppHeaderInfo title={title} items={items} />
         <AppHeaderAction actions={actions} />
       </div>
