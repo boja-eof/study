@@ -16,3 +16,8 @@ export const WhatsNew = {
   title: "What's new",
   data: "Watch this space to keep updated with latest clothes and accessories we add to your crates.",
 };
+
+export const HowItWorks = {
+  title: "How it works",
+  data: "Just 3 easy steps to subscribe and receive your monthly subscription of trendy clothes and accessories.",
+};

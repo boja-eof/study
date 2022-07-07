@@ -1,10 +1,15 @@
 import React from "react";
+import ContentHeader from "./../content-header";
+import { HowItWorks as cfg } from "../../settings";
 
 const HowItWorks = () => {
   return (
-    <div>
-      <h1>HowItWorks</h1>
-    </div>
+    <>
+      <ContentHeader {...cfg} />
+      <div>
+        <h1>HowItWorks</h1>
+      </div>
+    </>
   );
 };
 
