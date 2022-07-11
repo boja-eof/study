@@ -1,21 +1,12 @@
-import React, { useEffect } from "react";
-import { loaded, loading } from "../../components/card/cardSlice";
-import { useDispatch, useSelector } from "react-redux";
-
 import Card from "../card";
-import { Cards } from "../../db";
 import ContentHeader from "./../content-header";
+import React from "react";
 import { WhatsNew as cfg } from "../../settings";
 import style from "./base.module.scss";
+import { useSelector } from "react-redux";
 
 const WhatNews = () => {
   const { isLoading, errorMsg, items } = useSelector((state) => state.card);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(loading());
-    setTimeout(() => dispatch(loaded(Cards)), 1000);
-  }, []);
 
   return (
     <>
@@ -26,8 +17,8 @@ const WhatNews = () => {
         <div>{errorMsg}</div>
       ) : (
         <div className={style.base}>
-          {items.map((item, index) => (
-            <Card key={index} {...item} />
+          {items.map((item) => (
+            <Card key={item.id} {...item} />
           ))}
         </div>
       )}

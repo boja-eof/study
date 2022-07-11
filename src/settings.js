@@ -12,6 +12,8 @@ export const Header = {
   },
 };
 
+export const ApiHost = "http://localhost:8000";
+
 export const WhatsNew = {
   title: "What's new",
   data: "Watch this space to keep updated with latest clothes and accessories we add to your crates.",

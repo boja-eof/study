@@ -1,6 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const cardSlice = createSlice({
+export const {
+  reducer: cardReducer,
+  actions: { loading, loaderr, loaded },
+} = createSlice({
   name: "card",
   initialState: {
     items: [],
@@ -9,15 +12,9 @@ export const cardSlice = createSlice({
   },
   reducers: {
     loading: (state) => ({ ...state, isLoading: true, errorMsg: null }),
-    loaderr: (state, action) => {
-      console.log(action);
-      return { ...state, isLoading: false, errorMsg: action.payload };
-    },
     loaded: (state, action) => ({ ...state, isLoading: false, items: action.payload }),
+    loaderr: (state, action) => ({ ...state, isLoading: false, errorMsg: action.payload }),
   },
 });
 
-export const { loading, loaderr, loaded } = cardSlice.actions;
-
-const cardReducer = cardSlice.reducer;
 export default cardReducer;
