@@ -1,0 +1,39 @@
+.base {
+  flex: 1;
+  padding-left: 0;
+  text-align: center;
+
+  > a {
+    border: 0;
+    text-decoration: none;
+
+    > div {
+      border-radius: 0.2em;
+      font-family: "Roboto", sans-serif;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      width: 25em;
+      margin: 2.5em auto;
+      background-color: rgb(255, 255, 255);
+
+      > img {
+        width: 100%;
+      }
+
+      > div {
+        padding: 1em 1.2em;
+
+        > h4 {
+          font-family: "Lobster", cursive;
+          font-size: 1.75em;
+          color: rgb(0, 0, 0);
+        }
+
+        > p {
+          color: rgb(153, 153, 153);
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}
