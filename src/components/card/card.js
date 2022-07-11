@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./base.module.scss";
 import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
+import React from "react";
+import style from "./base.module.scss";
 
 const Card = (props) => {
   const { name, slug, image, description } = props;

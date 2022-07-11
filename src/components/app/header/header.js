@@ -1,8 +1,7 @@
-import React from "react";
-import AppHeaderInfo from "./info/info";
 import AppHeaderAction from "./action/action";
+import AppHeaderInfo from "./info/info";
 import { PropTypes } from "prop-types";
-
+import React from "react";
 import style from "./header.module.scss";
 
 const AppHeader = (props) => {

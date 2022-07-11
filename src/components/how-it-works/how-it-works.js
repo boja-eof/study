@@ -1,5 +1,5 @@
-import React from "react";
 import ContentHeader from "./../content-header";
+import React from "react";
 import { HowItWorks as cfg } from "../../settings";
 
 const HowItWorks = () => {
