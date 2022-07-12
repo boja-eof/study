@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const {
-  reducer: cardReducer,
+  reducer: card,
   actions: { loading, loaderr, loaded },
 } = createSlice({
   name: "card",
@@ -17,4 +17,4 @@ export const {
   },
 });
 
-export default cardReducer;
+export default card;
