@@ -1,10 +1,10 @@
-import React from "react";
+import "../components/app/css/reset.css";
+import "../components/app/css/fonts.css";
+import "../components/app/css/common.css";
+
 import AppHeader from "../components/app/header";
 import { BrowserRouter } from "react-router-dom";
-
-import "../components/app/css/fonts.css";
-import "../components/app/css/reset.css";
-import "../components/app/css/common.css";
+import React from "react";
 
 export default {
   title: "AppHeader",

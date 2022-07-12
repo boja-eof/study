@@ -2,7 +2,7 @@ import AppHeaderAction from "./action/action";
 import AppHeaderInfo from "./info/info";
 import { PropTypes } from "prop-types";
 import React from "react";
-import style from "./header.module.scss";
+import style from "./base.module.scss";
 
 const AppHeader = (props) => {
   const { title, items, actions } = props.config;

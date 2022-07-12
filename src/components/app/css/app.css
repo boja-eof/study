@@ -4,3 +4,7 @@ header {
   right: 0;
   top: 0;
 }
+
+section {
+  margin-top: 5em;
+}

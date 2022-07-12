@@ -1,5 +1,5 @@
-import "./css/fonts.css";
 import "./css/reset.css";
+import "./css/fonts.css";
 import "./css/common.css";
 import "./css/app.css";
 
@@ -9,15 +9,13 @@ import React from "react";
 import Routes from "../../routes";
 import { Header as headerConfig } from "../../settings";
 
-const style = {
-  marginTop: "5em",
-};
+const routes = Routes();
 
 const App = () => {
   return (
     <BrowserRouter>
       <AppHeader config={headerConfig} />
-      <section style={style}>{Routes()}</section>
+      <section>{routes}</section>
     </BrowserRouter>
   );
 };
