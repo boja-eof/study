@@ -1,9 +1,7 @@
 import { ApiHost } from "./settings";
 import { query } from "gql-query-builder";
 
-export const fetchMake = (operation, fields) => {
-  const method = "POST";
-
+export const sendRequest = (operation, fields, method = "POST") => {
   const headers = {
     "Content-Type": "application/json",
   };
@@ -15,5 +13,10 @@ export const fetchMake = (operation, fields) => {
     }),
   );
 
-  return fetch(ApiHost, { method, headers, body }).then((response) => response.json());
+  return fetch(ApiHost, { method, headers, body })
+    .then((response) => response.json())
+    .then((json) => json["data"][operation])
+    .catch((error) => {
+      throw String(error.message + " (" + ApiHost + ")");
+    });
 };

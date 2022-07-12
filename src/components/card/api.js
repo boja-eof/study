@@ -1,4 +1,4 @@
-import { fetchMake } from "../../api";
+import { sendRequest } from "../../api";
 
 export const getCards = () =>
-  fetchMake("products", ["id", "name", "slug", "description", "image", "createdAt"]);
+  sendRequest("products", ["id", "name", "slug", "description", "image", "createdAt"]);

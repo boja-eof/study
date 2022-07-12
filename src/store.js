@@ -4,16 +4,16 @@ import createSagaMiddleware from "redux-saga";
 import sagas from "./sagas";
 
 const createAppStore = () => {
-  const sagaMiddleware = createSagaMiddleware();
+  const saga = createSagaMiddleware();
 
   const store = configureStore({
     reducer: {
       card,
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(saga),
   });
 
-  sagaMiddleware.run(sagas);
+  saga.run(sagas);
 
   return store;
 };
