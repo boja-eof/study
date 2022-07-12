@@ -1,3 +1,1 @@
-import Women from "./women";
-
-export default Women;
+export { default } from "./women";

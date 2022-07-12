@@ -1,4 +1,2 @@
-import Human from "./human";
-
+export { default } from "./human";
 export * from "./human";
-export default Human;

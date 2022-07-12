@@ -1,3 +1,1 @@
-import HowItWorks from "./how-it-works";
-
-export default HowItWorks;
+export { default } from "./how-it-works";

@@ -1,3 +1,1 @@
-import Men from "./men";
-
-export default Men;
+export { default } from "./men";
