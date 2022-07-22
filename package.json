@@ -1,0 +1,7 @@
+{
+  "name": "study",
+  "version": "0.1.0",
+  "scripts": {
+    "start:web": "npm run start --prefix web"
+  }
+}
