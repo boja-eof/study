@@ -2,13 +2,13 @@ import "../components/app/css/reset.css";
 import "../components/app/css/fonts.css";
 import "../components/app/css/common.css";
 
-import AppHeader from "../components/app/header";
 import { BrowserRouter } from "react-router-dom";
+import Header from "../components/app/header";
 import React from "react";
 
 export default {
-  title: "AppHeader",
-  component: AppHeader,
+  title: "Header",
+  component: Header,
   parameters: {
     layout: "fullscreen",
   },
@@ -17,7 +17,7 @@ export default {
 const Template = (args) => {
   return (
     <BrowserRouter>
-      <AppHeader {...args} />
+      <Header {...args} />
     </BrowserRouter>
   );
 };
