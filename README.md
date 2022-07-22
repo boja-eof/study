@@ -4,9 +4,9 @@ React + Redux/Saga + NodeJs/Express
 
 #### Запуск
 
-### `npm run start --prefix api`
+`npm run start --prefix api`
 
-### `npm run start --prefix web`
+`npm run start --prefix web`
 
 Открыть в браузере [http://localhost:3000](http://localhost:3000)
 
@@ -14,4 +14,4 @@ React + Redux/Saga + NodeJs/Express
 
 #### React-компоненты storybook
 
-### `npm run storybook --prefix web`
+`npm run storybook --prefix web`
