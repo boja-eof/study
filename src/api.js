@@ -15,8 +15,14 @@ export const sendRequest = (operation, fields, method = "POST") => {
 
   return fetch(ApiHost, { method, headers, body })
     .then((response) => response.json())
+    .then((json) => {
+      if (json["errors"]) {
+        throw new Error(json["errors"][0]["message"]);
+      }
+      return json;
+    })
     .then((json) => json["data"][operation])
     .catch((error) => {
-      throw String(error.message + " (" + ApiHost + ")");
+      throw String(error.message);
     });
 };
